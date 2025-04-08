@@ -5,7 +5,7 @@ clear all
  figure, imshow(P) 
  Q=imread('PET.png');  % A MxNx3 matrix
  figure, imshow(Q) 
- if size(Q,3)==3       % For MRI-SPECT Image Fusion
+ if size(Q,3)==3       % For MRI-PET or MRI-SPECT Image Fusion
         tic
         P=double(P)/255;
         Q=double(Q)/255;
